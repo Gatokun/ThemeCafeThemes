@@ -1,0 +1,50 @@
+site_name: Theme Café Themes
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+not_in_nav: |
+  static/**/**.md
+  animated/**/**.md
+  music/**/**.md
+  splashes/**/**.md
+  
+nav:
+  - Home: index.md 
+  - Static Themes: static/index.md
+  - Animated Themes: animated/index.md
+  - Music: music/index.md
+  - Splashes: splashes/index.md
