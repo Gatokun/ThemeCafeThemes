@@ -1,0 +1,69 @@
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+body[data-md-color-scheme="slate"] .card:hover {
+  transform: scale(1.005);
+  background: #2B2A33;
+  cursor: pointer;
+}
+
+body[data-md-color-scheme="default"] .card:hover {
+  transform: scale(1.005);
+  background: #E9E9ED;
+  cursor: pointer;
+}
+
+body[data-md-color-scheme="default"] #searchBar {
+  background: #E9E9ED;
+}
+
+body[data-md-color-scheme="default"] #sortMode {
+  border: 1px solid #E9E9ED;
+}
+
+body[data-md-color-scheme="slate"] #sortMode {
+  border: 1px solid #2B2A33;
+}
+
+
+.md-grid {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 69rem;
+  /* base width is 61rem */
+}
+
+@media (max-width: 1400px) {
+  .md-grid {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 65rem;
+  /* base width is 61rem */
+}
+}
+
+@media (max-width: 1300px) {
+  .md-grid {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 61rem;
+  /* base width is 61rem */
+}
+}
+
+:root {
+    --md-text-font: "Rodin";
+  }
+
+@font-face {
+    font-family: "Rodin";
+    src: "rodin.otf";
+  }
